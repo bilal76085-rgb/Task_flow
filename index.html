@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>TaskFlow</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+<header class="header">
+
+<h2>TaskFlow</h2>
+
+<button class="logout">
+
+Logout
+
+</button>
+
+</header>
+
+
+
+<nav class="navbar">
+
+<a href="#">Dashboard</a>
+
+<a href="#">Tasks</a>
+
+<a href="#">New Task</a>
+
+</nav>
+
+
+
+<main class="container">
+
+
+<section class="card">
+
+<h3>My Tasks</h3>
+
+<p id="emptyMessage">
+
+No tasks available
+
+</p>
+
+<ul id="taskList">
+
+
+<li class="task">
+
+<div>
+
+<h4>Design UI</h4>
+
+<p class="desc">
+
+Create dashboard layout
+
+</p>
+
+<p class="todo badge">
+
+Todo
+
+</p>
+
+<p class="date">
+
+Due: 2026-04-01
+
+</p>
+
+</div>
+
+<button
+class="delete"
+onclick="deleteTask(this)">
+
+Delete
+
+</button>
+
+</li>
+
+
+<li class="task">
+
+<div>
+
+<h4>Write JS</h4>
+
+<p class="desc">
+
+Add DOM interaction
+
+</p>
+
+<p class="progress badge">
+
+In Progress
+
+</p>
+
+<p class="date">
+
+Due: 2026-04-03
+
+</p>
+
+</div>
+
+<button
+class="delete"
+onclick="deleteTask(this)">
+
+Delete
+
+</button>
+
+</li>
+
+
+<li class="task">
+
+<div>
+
+<h4>Testing</h4>
+
+<p class="desc">
+
+Check bugs
+
+</p>
+
+<p class="done badge">
+
+Done
+
+</p>
+
+<p class="date">
+
+Due: 2026-04-05
+
+</p>
+
+</div>
+
+<button
+class="delete"
+onclick="deleteTask(this)">
+
+Delete
+
+</button>
+
+</li>
+
+
+<li class="task">
+
+<div>
+
+<h4>Documentation</h4>
+
+<p class="desc">
+
+Prepare README
+
+</p>
+
+<p class="todo badge">
+
+Todo
+
+</p>
+
+</div>
+
+<button
+class="delete"
+onclick="deleteTask(this)">
+
+Delete
+
+</button>
+
+</li>
+
+
+<li class="task">
+
+<div>
+
+<h4>Submission</h4>
+
+<p class="desc">
+
+Upload to GitHub
+
+</p>
+
+<p class="progress badge">
+
+In Progress
+
+</p>
+
+</div>
+
+<button
+class="delete"
+onclick="deleteTask(this)">
+
+Delete
+
+</button>
+
+</li>
+
+
+</ul>
+
+</section>
+
+
+
+<section class="card">
+
+<h3>Create Task</h3>
+
+<p id="error"></p>
+
+
+<label>Title</label>
+
+<input
+id="title"
+type="text">
+
+
+<label>Description</label>
+
+<input
+id="description"
+type="text">
+
+
+<label>Status</label>
+
+<select id="status">
+
+<option>Todo</option>
+
+<option>In Progress</option>
+
+<option>Done</option>
+
+</select>
+
+
+<label>Due Date</label>
+
+<input
+id="date"
+type="date">
+
+
+<button
+class="create"
+onclick="addTask()">
+
+Create Task
+
+</button>
+
+
+</section>
+
+
+</main>
+
+
+<footer>
+
+<p>
+
+© 2026 TaskFlow | CS4717 Web Technologies
+
+</p>
+
+</footer>
+
+
+<script src="script.js">
+
+</script>
+
+</body>
+
+</html>
